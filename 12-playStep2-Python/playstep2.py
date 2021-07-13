@@ -33,6 +33,43 @@
 # into a sorted hand.
 # Hint: Also, remember to use % to get the one's digit, and use //= to get rid of the one's digit.
 
+
+def handtodice(hand):
+	l=[]
+	for i in range(len(str(hand))):
+		l.append(hand%10)
+		hand=hand//10
+	return (tuple(l[::-1]))
+
+
+def dicetoorderedhand(a, b, c):
+    # your code goes here
+    l=[a,b,c]
+    l.sort()
+    # s=""
+    # for i in l:
+    #     s+=str(i)
+    # return int(s[::-1])
+    return int( "".join([str(i) for i in l][::-1]))
+
+
 def playstep2(hand, dice):
 	# your code goes here
-	pass
+	c,b,a=handtodice(hand)
+	if(a==b):
+		c=dice%10
+		dice=dice//10
+		return (dicetoorderedhand(c,b,a),dice)
+	elif(b==c):
+		a=dice%10
+		dice=dice//10
+		return (dicetoorderedhand(c,b,a),dice)
+	else:
+		high=max(c,b,a)*100
+		mid=(dice%10)*10
+		dice=dice//10
+		low=dice%10
+		dice=dice//10
+		result=high+mid+low
+		c,b,a=handtodice(result)
+		return (dicetoorderedhand(c,b,a),dice)

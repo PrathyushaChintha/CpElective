@@ -1,0 +1,88 @@
+{
+    "playstep2.py": [
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 13 2021 23:50:58",
+            "keyStrokeInfo": "",
+            "position": "38,5"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 13 2021 23:50:58",
+            "keyStrokeInfo": "",
+            "position": "38,4"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 13 2021 23:50:58",
+            "keyStrokeInfo": "",
+            "position": "38,3"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 13 2021 23:50:59",
+            "keyStrokeInfo": "",
+            "position": "38,2"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 37,
+            "keyStrokeTimeStamp": "Tue Jul 13 2021 23:54:05",
+            "keyStrokeInfo": "def handtodice(hand):\r\n\ta=hand%10\r\n\thand=hand//10\r\n\tb=hand%10\r\n\thand=hand//10\r\n\tc=hand%10\r\n\treturn c,b,a\r\n\r\ndef dicetoorderedhand(a, b, c):\r\n\t# your code goes here\r\n\thigh=max(a,b,c)\r\n\tlow=min(a,b,c)\r\n\tmid=a+b+c-high-low\r\n\tresult=high*100+mid*10+low\r\n\treturn result\r\n\r\n\r\ndef playstep2(hand, dice):\r\n\t# your code goes here\r\n\tc,b,a=handtodice(hand)\r\n\tif(a==b):\r\n\t\tc=dice%10\r\n\t\tdice=dice//10\r\n\t\treturn (dicetoorderedhand(c,b,a),dice)\r\n\telif(b==c):\r\n\t\ta=dice%10\r\n\t\tdice=dice//10\r\n\t\treturn (dicetoorderedhand(c,b,a),dice)\r\n\telse:\r\n\t\thigh=max(c,b,a)*100\r\n\t\tmid=(dice%10)*10\r\n\t\tdice=dice//10\r\n\t\tlow=dice%10\r\n\t\tdice=dice//10\r\n\t\tresult=high+mid+low\r\n\t\tc,b,a=handtodice(result)\r\n\t\treturn (dicetoorderedhand(c,b,a),dice)",
+            "position": "38,2"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Tue Jul 13 2021 23:54:24",
+            "keyStrokeInfo": "",
+            "position": "36,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 13 2021 23:54:29",
+            "keyStrokeInfo": "",
+            "position": "37,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 6,
+            "keyStrokeTimeStamp": "Tue Jul 13 2021 23:55:43",
+            "keyStrokeInfo": "",
+            "position": "37,2"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 13 2021 23:55:43",
+            "keyStrokeInfo": "",
+            "position": "37,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 6,
+            "keyStrokeTimeStamp": "Tue Jul 13 2021 23:55:44",
+            "keyStrokeInfo": "def handtodice(hand):\r\n\tl=[]\r\n\tfor i in range(len(str(hand))):\r\n\t\tl.append(hand%10)\r\n\t\thand=hand//10\r\n\treturn (tuple(l[::-1]))",
+            "position": "37,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 6,
+            "keyStrokeTimeStamp": "Tue Jul 13 2021 23:56:16",
+            "keyStrokeInfo": "",
+            "position": "44,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 9,
+            "keyStrokeTimeStamp": "Tue Jul 13 2021 23:56:17",
+            "keyStrokeInfo": "\r\ndef dicetoorderedhand(a, b, c):\r\n    # your code goes here\r\n    l=[a,b,c]\r\n    l.sort()\r\n    # s=\"\"\r\n    # for i in l:\r\n    #     s+=str(i)\r\n    # return int(s[::-1])\r\n    return int( \"\".join([str(i) for i in l][::-1]))",
+            "position": "44,1"
+        }
+    ]
+}
