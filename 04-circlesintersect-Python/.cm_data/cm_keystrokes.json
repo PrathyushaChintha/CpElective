@@ -1,0 +1,95 @@
+{
+    "circlesintersect.py": [
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 00:49:46",
+            "keyStrokeInfo": "\r\n\t",
+            "position": "8,23"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 4,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 00:49:51",
+            "keyStrokeInfo": "",
+            "position": "7,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 3,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 00:49:52",
+            "keyStrokeInfo": "def fun_circlesintersect(x1, y1, r1, x2, y2, r2):\r\n\tdistance = ((x1-x2)*2+(y1-y2)2)*0.5\r\n\treturn distance <= r1 + r2",
+            "position": "7,1"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 00:50:00",
+            "keyStrokeInfo": "*",
+            "position": "8,31"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 00:50:53",
+            "keyStrokeInfo": "",
+            "position": "8,31"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 2,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 00:50:53",
+            "keyStrokeInfo": "",
+            "position": "7,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 4,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 00:50:54",
+            "keyStrokeInfo": "def fun_circlesintersect(x1, y1, r1, x2, y2, r2):\r\n\t# your code goes here\r\n\t\r\n\treturn False \r\n",
+            "position": "7,1"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 00:51:01",
+            "keyStrokeInfo": "\r\n\t",
+            "position": "10,15"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 00:51:03",
+            "keyStrokeInfo": "",
+            "position": "11,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 3,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 00:51:04",
+            "keyStrokeInfo": "def fun_circlesintersect(x1, y1, r1, x2, y2, r2):\r\n\tdistance = ((x1-x2)*2+(y1-y2)2)*0.5\r\n\treturn distance <= r1 + r2",
+            "position": "11,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 3,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 00:51:19",
+            "keyStrokeInfo": "",
+            "position": "7,1"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 00:51:23",
+            "keyStrokeInfo": "*",
+            "position": "9,31"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 3,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 00:52:22",
+            "keyStrokeInfo": "def fun_circlesintersect(x1, y1, r1, x2, y2, r2):\r\n\t# your code goes here\r\n\treturn False \r\n",
+            "position": "7,1"
+        }
+    ]
+}
