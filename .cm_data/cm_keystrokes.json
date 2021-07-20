@@ -1,0 +1,32 @@
+{
+    "removeRowAndCol.py": [
+        {
+            "operation": "DELETE",
+            "lines": 2,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:12:16",
+            "keyStrokeInfo": "",
+            "position": "24,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 17,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:12:17",
+            "keyStrokeInfo": "def removeRowAndCol(L, row, col):\r\n    # Your code goes here...\r\n    a=[]\r\n    if(len(L)==1 or len(L)==0 or row==0 or col==0):\r\n        return \" Cannot  remove row and col \"\r\n    else:\r\n        for j in L:\r\n            del j[col]\r\n        L.pop(row)\r\n        return L\r\n    \r\n\r\n# Write your own test cases.\r\nk=removeRowAndCol([ [ 2, 3, 4, 5],\r\n   [ 8, 7, 6, 5],\r\n  [ 0, 1, 2, 3]] ,1,2 )\r\nprint(k)",
+            "position": "24,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:12:23",
+            "keyStrokeInfo": "",
+            "position": "42,2"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:12:23",
+            "keyStrokeInfo": "",
+            "position": "42,1"
+        }
+    ]
+}
