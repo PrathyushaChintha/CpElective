@@ -1,0 +1,90 @@
+{
+    "stacks.py": [
+        {
+            "operation": "DELETE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:23:55",
+            "keyStrokeInfo": "",
+            "position": "1,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 43,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:23:56",
+            "keyStrokeInfo": "class Element(object):\r\n    def _init_(self, value):\r\n        self.value = value\r\n        self.next = None\r\n       \r\nclass LinkedList(object):\r\n    def _init_(self, head=None):\r\n        self.head = head\r\n       \r\n    def append(self, new_element):\r\n        current = self.head\r\n        if self.head:\r\n            while current.next:\r\n                current = current.next\r\n            current.next = new_element\r\n        else:\r\n            self.head = new_element\r\n\r\n    def insert_first(self, new_element):\r\n        \"Insert new element as the head of the LinkedList\"\r\n        new_element.next=self.head\r\n        self.head=new_element\r\n\r\n\r\n    def delete_first(self):\r\n        \"Delete the first (head) element in the LinkedList as return it\"\r\n        a=self.head\r\n        if(self.head):\r\n            self.head=self.head.next\r\n            a.next=None\r\n        return a\r\n\r\nclass stack(object):\r\n    def _init_(self,top=None):\r\n        self.ll = LinkedList(top)\r\n\r\n    def push(self, new_element):\r\n        \"Push (add) a new element onto the top of the stack\"\r\n        self.ll.insert_first(new_element)\r\n\r\n    def pop(self):\r\n        \"Pop (remove) the first element off the top of the stack and return it\"\r\n        return self.ll.delete_first()\r\n",
+            "position": "1,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 45,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:35:20",
+            "keyStrokeInfo": "\"\"\"Add a couple methods to our LinkedList class,\r\nand use that to implement a Stack.\r\nYou have 4 functions below to fill in:\r\ninsert_first, delete_first, push, and pop.\r\nThink about this while you're implementing:\r\nwhy is it easier to add an \"insert_first\"\r\nfunction than just use \"append\"?\"\"\"\r\n\r\nclass Element(object):\r\n    def __init__(self, value):\r\n        self.value = value\r\n        self.next = None\r\n        \r\nclass LinkedList(object):\r\n    def __init__(self, head=None):\r\n        self.head = head\r\n        \r\n    def append(self, new_element):\r\n        current = self.head\r\n        if self.head:\r\n            while current.next:\r\n                current = current.next\r\n            current.next = new_element\r\n        else:\r\n            self.head = new_element\r\n\r\n    def insert_first(self, new_element):\r\n        \"Insert new element as the head of the LinkedList\"\r\n        pass\r\n\r\n    def delete_first(self):\r\n        \"Delete the first (head) element in the LinkedList as return it\"\r\n        pass\r\n\r\nclass stack(object):\r\n    def __init__(self,top=None):\r\n        self.ll = LinkedList(top)\r\n\r\n    def push(self, new_element):\r\n        \"Push (add) a new element onto the top of the stack\"\r\n        pass\r\n\r\n    def pop(self):\r\n        \"Pop (remove) the first element off the top of the stack and return it\"\r\n        pass\r\n    ",
+            "position": "1,1"
+        }
+    ],
+    "test_solution.py": [
+        {
+            "operation": "DELETE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:26:04",
+            "keyStrokeInfo": "",
+            "position": "1,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 25,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:26:05",
+            "keyStrokeInfo": "import os,sys\r\nsys.path.append(os.getcwd())\r\nfrom stacks import stack\r\nfrom stacks import Element  \r\nimport pytest\r\n\r\ne1 = Element(1)\r\ne2 = Element(2)\r\ne3 = Element(3)\r\ne4 = Element(4)\r\n\r\n# Start setting up a Stack\r\nstack = stack(e1)\r\n\r\n# Test stack functionality\r\nstack.push(e2)\r\nstack.push(e3)\r\n\r\n@pytest.mark.parametrize(\"result\",[(3),(2),(1)])\r\ndef test_pop1(result):    \r\n    assert stack.pop().value == result\r\n\r\n@pytest.mark.parametrize(\"result\",[(None)])\r\ndef test_pop2(result):    \r\n    assert stack.pop() == result",
+            "position": "1,1"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:26:31",
+            "keyStrokeInfo": "\r\n    ",
+            "position": "25,33"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:26:32",
+            "keyStrokeInfo": "",
+            "position": "26,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 4,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:26:34",
+            "keyStrokeInfo": "@pytest.mark.parametrize(\"result\",[(4)])\r\ndef test_pop3(result):\r\n    stack.push(e4)    \r\n    assert stack.pop().value == result",
+            "position": "26,1"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:26:38",
+            "keyStrokeInfo": "\r\n    ",
+            "position": "25,33"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:28:45",
+            "keyStrokeInfo": "",
+            "position": "1,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 30,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:28:46",
+            "keyStrokeInfo": "import os,sys\r\nsys.path.append(os.getcwd())\r\nfrom stacks import stack\r\nfrom stacks import Element  \r\nimport pytest\r\n\r\ne1 = Element(1)\r\ne2 = Element(2)\r\ne3 = Element(3)\r\ne4 = Element(4)\r\n\r\n# Start setting up a Stack\r\nstack = stack(e1)\r\n\r\n# Test stack functionality\r\nstack.push(e2)\r\nstack.push(e3)\r\n\r\n@pytest.mark.parametrize(\"result\",[(3),(2),(1)])\r\ndef test_pop1(result):    \r\n    assert stack.pop().value == result\r\n\r\n@pytest.mark.parametrize(\"result\",[(None)])\r\ndef test_pop2(result):    \r\n    assert stack.pop() == result\r\n\r\n@pytest.mark.parametrize(\"result\",[(4)])\r\ndef test_pop3(result):\r\n    stack.push(e4)    \r\n    assert stack.pop().value == result\r\n",
+            "position": "1,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 30,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:35:20",
+            "keyStrokeInfo": "\r\nimport os,sys\r\nsys.path.append(os.getcwd())\r\nfrom stacks import stack\r\nfrom stacks import Element  \r\nimport pytest\r\n\r\ne1 = Element(1)\r\ne2 = Element(2)\r\ne3 = Element(3)\r\ne4 = Element(4)\r\n\r\n# Start setting up a Stack\r\nstack = stack(e1)\r\n\r\n# Test stack functionality\r\nstack.push(e2)\r\nstack.push(e3)\r\n\r\n@pytest.mark.parametrize(\"result\",[(3),(2),(1)])\r\ndef test_pop1(result):    \r\n    assert stack.pop().value == result\r\n\r\n@pytest.mark.parametrize(\"result\",[(None)])\r\ndef test_pop2(result):    \r\n    assert stack.pop() == result\r\n\r\n@pytest.mark.parametrize(\"result\",[(4)])\r\ndef test_pop3(result):\r\n    stack.push(e4)    \r\n    assert stack.pop().value == result\r\n\r\n",
+            "position": "1,1"
+        }
+    ]
+}
