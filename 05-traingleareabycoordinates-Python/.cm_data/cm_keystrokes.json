@@ -1,0 +1,34 @@
+{
+    "triangleareabycoordinates.py": [
+        {
+            "operation": "PASTE",
+            "lines": 9,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:04:17",
+            "keyStrokeInfo": "# triangleareabycoordinates(x1, y1, x2, y2, x3, y3)[5pts]\r\n# Write the function triangleareabycoordinates(x1, y1, x2, y2, x3, y3) that takes 6 int or float\r\n# values that represent the three points (x1,y1), (x2,y2), and (x3,y3), and returns as a float the\r\n# area of the triangle formed by those three points. Hint: you should make constructive use of\r\n# the triangleArea function you just wrote above.\r\n\r\ndef triangleareabycoordinates(x1, y1, x2, y2, x3, y3):\r\n\t# your code goes here\r\n\tarea=1/2*(x1*(y2-y3)+",
+            "position": "1,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 2,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:04:48",
+            "keyStrokeInfo": "+x2*(y3-y1)+x3*(y1-y2))\r\n\treturn area",
+            "position": "9,23"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:04:51",
+            "keyStrokeInfo": "",
+            "position": "9,23"
+        }
+    ],
+    "test_triangleareabycoordinates.py": [
+        {
+            "operation": "PASTE",
+            "lines": 16,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:06:19",
+            "keyStrokeInfo": "import pytest\r\nfrom triangleareabycoordinates import triangleareabycoordinates\r\nimport os\r\nimport sys\r\nsys.path.append(os.getcwd())\r\n\r\n\r\n@pytest.mark.parametrize('x, y, z, x1, y1, z1, check', [\r\n\t(23, 30, 15, 15, 50, 25, 222.50),\r\n\t(23, 30, 15, 15, 32, 15, 127.50),\r\n\t(15, 35, 15, 15, 32, 15, 170),\r\n\t(25, 35, 15, 15, 34, 15, 190),\r\n\t(25, 17, 15, 15, 34, 15, 19)\r\n])\r\ndef test_triangleareabycoordinates(x, y, z, x1, y1, z1, check):\r\n    assert round(triangleareabycoordinates(x, y, z, x1, y1, z1), 2) == check\r\n",
+            "position": "1,1"
+        }
+    ]
+}
