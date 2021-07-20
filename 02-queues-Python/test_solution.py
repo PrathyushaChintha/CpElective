@@ -29,4 +29,3 @@ def test_dequeue1(result):
 def test_peek2(result): 
     q.enqueue(5)   
     assert q.peek() == result
-

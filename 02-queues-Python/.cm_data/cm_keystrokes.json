@@ -1,0 +1,55 @@
+{
+    "queues.py": [
+        {
+            "operation": "DELETE",
+            "lines": 11,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:16:14",
+            "keyStrokeInfo": "",
+            "position": "7,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 15,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:16:15",
+            "keyStrokeInfo": "class Queue:\r\n    def _init_(self, head=None):\r\n        self.storage = [head]\r\n\r\n    def enqueue(self, new_element):\r\n        self.storage.append(new_element)\r\n\r\n\r\n    def peek(self):\r\n        return self.storage[0] \r\n\r\n    def dequeue(self):\r\n        p=self.storage[0]\r\n        self.storage.remove(p)\r\n        return p",
+            "position": "7,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:20:00",
+            "keyStrokeInfo": "",
+            "position": "1,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 20,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:20:01",
+            "keyStrokeInfo": "\"\"\"Make a Queue class using a list!\r\nHint: You can use any Python list method\r\nyou'd like! Try to write each one in as \r\nfew lines as possible.\r\nMake sure you pass the test cases too!\"\"\"\r\n\r\nclass Queue:\r\n    def __init__(self, head=None):\r\n        self.storage = [head]\r\n\r\n    def enqueue(self, new_element):\r\n        self.storage.append(new_element)\r\n       \r\n\r\n    def peek(self):\r\n        return self.storage[0]\r\n        \r\n\r\n    def dequeue(self):\r\n        return self.storage.pop(0)\r\n        \r\n",
+            "position": "1,1"
+        }
+    ],
+    "test_solution.py": [
+        {
+            "operation": "DELETE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:19:08",
+            "keyStrokeInfo": "",
+            "position": "1,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 31,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:19:09",
+            "keyStrokeInfo": "\r\nimport os,sys\r\nsys.path.append(os.getcwd())\r\nfrom queues import Queue  \r\nimport pytest\r\n\r\nq = Queue(1)\r\nq.enqueue(2)\r\nq.enqueue(3)\r\n\r\n\r\n@pytest.mark.parametrize(\"result\",[(1)])\r\ndef test_peek1(result):    \r\n    assert q.peek() == result\r\n    \r\n\r\n@pytest.mark.parametrize(\"result\",[(1)])\r\ndef test_dequeue2(result):    \r\n    assert q.dequeue() == result\r\n    q.enqueue(4)\r\n\r\n@pytest.mark.parametrize(\"result\",[(2),(3),(4)])\r\ndef test_dequeue1(result):    \r\n    assert q.dequeue() == result\r\n\r\n\r\n\r\n@pytest.mark.parametrize(\"res\r\nult\",[(5)])\r\ndef test_peek2(result): \r\n    q.enqueue(5)   \r\n    assert q.peek() == result",
+            "position": "1,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:19:26",
+            "keyStrokeInfo": "",
+            "position": "28,30"
+        }
+    ]
+}
