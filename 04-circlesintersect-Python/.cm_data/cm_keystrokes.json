@@ -1,0 +1,18 @@
+{
+    "circlesintersect.py": [
+        {
+            "operation": "DELETE",
+            "lines": 2,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 15:52:09",
+            "keyStrokeInfo": "",
+            "position": "7,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 5,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 15:52:10",
+            "keyStrokeInfo": "import math\r\ndef fun_circlesintersect(x1, y1, r1, x2, y2, r2):\r\n\t# your code goes here\r\n\tdist=math.sqrt(((x1-x2)**2+(y2-y1)**2))\r\n\treturn dist<=r1+r2 ",
+            "position": "7,1"
+        }
+    ]
+}
