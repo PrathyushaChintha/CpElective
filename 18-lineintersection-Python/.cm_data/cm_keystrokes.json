@@ -1,0 +1,25 @@
+{
+    "lineintersection.py": [
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:09:47",
+            "keyStrokeInfo": "\r\n\t",
+            "position": "8,23"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 3,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:10:12",
+            "keyStrokeInfo": "",
+            "position": "7,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 17,
+            "keyStrokeTimeStamp": "Tue Jul 20 2021 16:10:13",
+            "keyStrokeInfo": "def lineintersection(m1, b1, m2, b2):\r\n\t# your code goes here\r\n\tif(b1 == b2 or m1==m2):\r\n\t\treturn None\r\n\telif(fun_ismultiple(m1,m2) or fun_ismultiple(m2,m1)):\r\n\t\treturn None\r\n\telse:\r\n\t\treturn (b2-b1)/(m1-m2)\r\ndef fun_ismultiple(m,n):\r\n\tif m == 0:\r\n\t\treturn True\r\n\telif n == 0:\r\n\t\treturn False\r\n\telif m%n==0:\r\n\t\treturn True\r\n\telse:\r\n\t\treturn False\r\n",
+            "position": "7,1"
+        }
+    ]
+}
