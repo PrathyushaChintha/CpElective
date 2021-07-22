@@ -1,0 +1,25 @@
+{
+    "stringkeys.py": [
+        {
+            "operation": "PASTE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Wed Jul 21 2021 18:04:28",
+            "keyStrokeInfo": "\r\n        ",
+            "position": "13,30"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 26,
+            "keyStrokeTimeStamp": "Thu Jul 22 2021 10:56:18",
+            "keyStrokeInfo": "",
+            "position": "5,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 31,
+            "keyStrokeTimeStamp": "Thu Jul 22 2021 10:56:19",
+            "keyStrokeInfo": "class HashTable(object):\r\n    def _init_(self):\r\n        self.table = [None]*10000\r\n\r\n    def store(self, string):\r\n        \"\"\"Input a string that's stored in \r\n        the table.\"\"\"\r\n        # Hash Value = (ASCII Value of First Letter * 100) + ASCII Value of Second Letter \r\n        # Your code goes here\r\n        result=self.calculate_hash_value(string)\r\n        self.table[result]=string\r\n\r\n        \r\n    def lookup(self, string):\r\n        \"\"\"Return the hash value if the\r\n        string is already in the table.\r\n        Return -1 otherwise.\"\"\"\r\n        # Your code goes here\r\n        result=self.calculate_hash_value(string)\r\n        if(string in self.table):\r\n            return result\r\n        else:\r\n            return -1\r\n\r\n\r\n    def calculate_hash_value(self, string):\r\n        \"\"\"Helper function to calulate a\r\n        hash value from a string.\"\"\"\r\n        # Your code goes here\r\n        value=ord(string[0])*100 + ord(string[1])\r\n        return value",
+            "position": "5,1"
+        }
+    ]
+}
