@@ -1,0 +1,83 @@
+{
+    "nthpowerfulnumber.py": [
+        {
+            "operation": "DELETE",
+            "lines": 3,
+            "keyStrokeTimeStamp": "Thu Jul 22 2021 15:19:52",
+            "keyStrokeInfo": "",
+            "position": "8,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 23,
+            "keyStrokeTimeStamp": "Thu Jul 22 2021 15:19:54",
+            "keyStrokeInfo": "def nthPowerfulNumber(n):\r\n    import math \r\ndef isPowerful(n): \r\n    while (n % 2 == 0): \r\n          power = 0\r\n        while (n % 2 == 0): \r\n              n = n//2 \r\n            power = power + 1\r\n        if (power == 1): \r\n            return False\r\n    for factor in range(3, int(math.sqrt(n))+1, 2): \r\n        power = 0\r\n        while (n % factor == 0): \r\n              n = n//factor \r\n            power = power + 1\r\n        if (power == 1): \r\n            return false \r\n    return (n == 1) \r\nprint(\"YES\" if isPowerful(20) else \"NO\") \r\nprint(\"YES\" if isPowerful(27) else \"NO\") \r\n    return -1\r\n\r\nprint(nthPowerfulNumber(int(input())))",
+            "position": "8,1"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Thu Jul 22 2021 15:20:20",
+            "keyStrokeInfo": "\t",
+            "position": "10,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Thu Jul 22 2021 15:20:25",
+            "keyStrokeInfo": "\t\t",
+            "position": "25,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 14,
+            "keyStrokeTimeStamp": "Thu Jul 22 2021 15:20:42",
+            "keyStrokeInfo": "",
+            "position": "10,2"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Thu Jul 22 2021 15:20:45",
+            "keyStrokeInfo": "",
+            "position": "1,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 16,
+            "keyStrokeTimeStamp": "Thu Jul 22 2021 15:20:46",
+            "keyStrokeInfo": "# nthPowerfulNumber(n) [20 pts]\r\n# Write the function nthPowerfulNumber(n). See here for details. So nthPowerfulNumber(0) returns \r\n# 1, and nthPowerfulNumber(10) returns 64.\r\n# A number n is said to be Powerful Number if for every prime factor p of it, p2 also divides it. \r\n# For example:- 36 is a powerful number. It is divisible by both 3 and square of 3 i.e, 9.\r\n\r\n\r\ndef nthPowerfulNumber(n):\r\n    import math \r\n\t\r\n\t\treturn (n == 1) \r\nprint(\"YES\" if isPowerful(20) else \"NO\") \r\nprint(\"YES\" if isPowerful(27) else \"NO\") \r\n    return -1\r\n\r\nprint(nthPowerfulNumber(int(input())))",
+            "position": "1,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 8,
+            "keyStrokeTimeStamp": "Thu Jul 22 2021 15:20:54",
+            "keyStrokeInfo": "",
+            "position": "8,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 15,
+            "keyStrokeTimeStamp": "Thu Jul 22 2021 15:20:55",
+            "keyStrokeInfo": "def isPowerful(n): \r\n\t\twhile (n % 2 == 0): \r\n\t\t\tpower = 0\r\n\t\t\twhile (n % 2 == 0): \r\n\t\t\t\tn = n//2 \r\n\t\t\t\tpower = power + 1\r\n\t\t\tif (power == 1): \r\n\t\t\t\treturn False\r\n\t\tfor factor in range(3, int(math.sqrt(n))+1, 2): \r\n\t\t\tpower = 0\r\n\t\t\twhile (n % factor == 0): \r\n\t\t\t\tn = n//factor \r\n\t\t\t\tpower = power + 1\r\n\t\t\tif (power == 1): \r\n\t\t\t\treturn false ",
+            "position": "8,1"
+        }
+    ],
+    "test.py": [
+        {
+            "operation": "PASTE",
+            "lines": 9,
+            "keyStrokeTimeStamp": "Thu Jul 22 2021 16:19:28",
+            "keyStrokeInfo": "def removerowcol():\r\n    s=[[1,2,3] \r\n        [3,4,5]]\r\n    for i in range(len(s)):\r\n        if(s[i] in s):\r\n            s.remove(i)\r\n            print(s)\r\n        elif(s[i] not in s):\r\n            return s\r\n\r\n    \r\n    \r\n",
+            "position": "1,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Thu Jul 22 2021 16:27:25",
+            "keyStrokeInfo": "",
+            "position": "1,1"
+        }
+    ]
+}
