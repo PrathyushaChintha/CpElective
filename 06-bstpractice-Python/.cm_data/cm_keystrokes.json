@@ -1,0 +1,32 @@
+{
+    "bst.py": [
+        {
+            "operation": "DELETE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Wed Aug 04 2021 23:17:11",
+            "keyStrokeInfo": "",
+            "position": "1,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 7,
+            "keyStrokeTimeStamp": "Wed Aug 04 2021 23:17:12",
+            "keyStrokeInfo": "def matrixadd(L, M):\r\nif len(L[0])==len(M[0]) == 1:\r\nreturn [[L[0][0]+M[0][0]]]\r\nelif (len(L) != len(M) or len(L[0]) != len(M[0]) or len(L[1]) != len(M[1])):\r\nreturn None\r\nresult = [[L[i][j] + M[i][j] for j in range(len(L[0]))] for i in range(len(L))]\r\nreturn result",
+            "position": "1,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Wed Aug 04 2021 23:17:15",
+            "keyStrokeInfo": "",
+            "position": "1,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 45,
+            "keyStrokeTimeStamp": "Wed Aug 04 2021 23:18:01",
+            "keyStrokeInfo": "class Node(object):\r\n    def _init_(self, value):\r\n        self.value = value\r\n        self.left = None\r\n        self.right = None\r\n\r\nclass BST(object):\r\n    def _init_(self, root):\r\n        self.root = Node(root)\r\n\r\n    def insert(self, new_val):\r\n        # Your code goes here\r\n        newNode = Node(new_val)\r\n        if (self.root == None):\r\n            self.root = newNode\r\n        else:\r\n            current = self.root\r\n            parent = self.root\r\n            while (current != None):\r\n                parent = current\r\n                if (new_val < current.value):\r\n                    current = current.left\r\n                else:\r\n                    current = current.right\r\n            if (new_val < parent.value):\r\n                parent.left= newNode\r\n            else:\r\n                parent.right = newNode\r\n\r\n    def printSelf(self):\r\n        # Your code goes here\r\n        print(self.root)\r\n\r\n\r\n        \r\n    def search(self, find_val):\r\n        # Your code goes here\r\n        while self.root!=None:\r\n            if self.root.value == find_val:\r\n                return True \r\n            if self.root.value < find_val:\r\n                self.root = self.root.right\r\n            else:\r\n                self.root = self.root.left\r\n        return False",
+            "position": "1,1"
+        }
+    ]
+}
